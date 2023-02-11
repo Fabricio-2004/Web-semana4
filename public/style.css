@@ -1,0 +1,121 @@
+#general{
+    display: block;
+    float: left;
+    width: 90%;
+    border: 1px solid green;
+    margin: 0px auto;
+}
+
+#animacion, #transicion ,#formularios{
+    width: 250px;
+    height: 250px;
+    border: 1px solid red;
+    margin: 5px;
+    display: block;
+    float: left;
+}
+
+#transicion:hover{
+    background-color: aqua;
+}
+
+#transicion > a{
+    display: block;
+    padding: 30px;
+    width: 30px;
+    height: 20px;
+    background-color: #ddd;
+    border: 2px solid red;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    transition: background-color 2s, border-radius 3s;
+    animation-timing-function: linear;
+}
+
+#boton:hover{
+    background-color: blue;
+    border-radius: 15px;
+    border: 5px solid red;
+
+}
+
+#caja{
+    width:200px;
+    height:200px;
+    background-color: aqua;
+    color:white;
+    line-height: 200px;
+    border:1px solid black;
+/*     animation-name: desplazamiento; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
+}
+
+#caja >p {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+ @keyframes desplazamiento {
+
+   /* from{
+        margin-left: 0px;
+
+    }
+
+    to{
+        margin-left: 1000px;
+
+    } 
+    */
+ 
+    0%{
+        margin-left: 0px;
+        transform: rotate(360deg);
+    }
+    100%{
+        margin-left: 1000px;
+        transform: rotate(0deg);
+
+    }
+
+    50%{
+        margin-left: 1000px;
+        border-radius: 999px;
+
+    }
+
+    77%{
+        background-color: red;
+        border: 5px dotted green;
+    }
+
+    79%{
+        width: 210;
+        height: 210px;
+    }
+
+    79%{
+        width: 220;
+        height: 220px;
+    }
+
+
+
+    100%{
+        margin-left: 1000px;
+        transform: rotate(0deg);
+    }
+    }
+
+    #formulario{
+        margin:10px;
+
+    }
+
+    
+
